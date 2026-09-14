@@ -4,4 +4,13 @@
 
 ### Docente M.T.I Marco A. Ramírez Hernández
 
-Periodo: Septiembre - Diciembre 2026 
+---
+
+### Tabla de Practicas de la Materia
+
+|No| Nombre| Descripcion | Potenciador | Estatus |
+|--|--|--|--|--|
+|1.|Metodologia de Evaluación de la Materia| 5 |🟢Concluida|
+|2.|Mi Primer pagina web|
+
+Periodo: Septiembre - Diciembre 2026
