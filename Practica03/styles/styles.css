@@ -1,0 +1,21 @@
+body{
+    background-color: antiquewhite;
+    
+}
+#acerca_de_mi{
+    background-color:aliceblue;
+}
+.menu-option{
+    background-color:beige;
+    padding:10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    transition: font-size 0.3s ease-in-out;
+    
+}
+.menu-option:hover{
+    font-size: 30px;
+}
+svg{
+    width: 30px;
+}
