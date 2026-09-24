@@ -85,7 +85,7 @@ PARALAX
     position: relative;
 }
 
-.parallax ::before {
+.parallax::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -98,49 +98,90 @@ PARALAX
 }
 
 .parallax-1 {
-    background-color: url("../assets/Images/fondo1.jpg")");
+    background-image: url("../assets/Images/fondo1.jpg");
 }
 
 .parallax-2 {
-    background-color: url("../assets/images/fondo2.jpg");
+    background-image: url("../assets/Images/fondo2.jpg");
 }
 
 .parallax-3 {
-    background-color: url("../assets/images/fondo3.jpg");
+    background-image: url("../assets/Images/fondo3.jpg");
 }
 
 .parallax-4 {
-    background-color: url("../assets/images/fondo4.jpg");
+    background-image: url("../assets/Images/fondo4.jpg");
 }
 
 .parallax-5 {
-    background-color: url("../assets/images/fondo5.jpg");
+    background-image: url("../assets/Images/fondo5.jpg");
 }
 
-.porfile-img{
-    width: clamp(140px,20vmin,300px);
-    height: clamp(140px,20vmin,300px);
+.porfile-img {
+    width: clamp(140px, 20vmin, 300px);
+    height: clamp(140px, 20vmin, 300px);
     object-fit: cover;
     border-radius: 50%;
     display: block;
     box-shadow: 0 10px 30px rgba(255, 0, 0, 0.63);
 }
 
-.glass{
+.glass {
     background: rgba(20, 30, 50, 0.38);
     color: white;
     backdrop-filter: blur(14px);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 24px;
     box-shadow: rgba(0, 0, 0, 0.25);
+    display:flex;
 }
-
 /*
 HERO
 */
 
-.porfile-card{
-    max-width: 700px;
+.porfile-card {
+    max-width: 900px;
     padding: 45px;
     text-align: center;
+}
+
+.porfile-card h1 {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.porfile-card p {
+    font-size: 1.2rem;
+}
+
+blockquote {
+    margin: 25px auto;
+    max-width: 500px;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+
+/*====
+BOTON
+====
+*/
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    color:#111827;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: hold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translate(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    background-color: tomato;
+    color: white;
 }
