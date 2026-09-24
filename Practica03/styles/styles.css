@@ -1,26 +1,30 @@
-body{
+body {
     background-color: rgb(103, 99, 93);
     font-family: Arial, Helvetica, sans-serif;
     margin: 20px;
     color: #e0d8d8;
     line-height: 0.5;
-  /*  border-color: brown;
+    /*  border-color: brown;
     border-style: solid;
     padding: 50px;*/
 }
-#acerca_de_mi{
-    background-color:rgb(5, 31, 54);
+
+#acerca_de_mi {
+    background-color: rgb(5, 31, 54);
 }
-.menu-option{   
-      padding:10px;
+
+.menu-option {
+    padding: 10px;
     font-size: 20px;
     transition: font-size 0.3s ease-in-out;
-    
+
 }
-.menu-option:hover{
+
+.menu-option:hover {
     font-size: 30px;
 }
-nav{
+
+nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -29,40 +33,46 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgba(15, 23, 42, 0.45);
+    background: rgba(198, 202, 209, 0.45);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     z-index: 1000;
     transition: 0.3;
 }
-nav h2{
+
+nav h2 {
     color: rgb(243, 239, 239);
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
 }
-nav a{
+
+nav a {
     color: rgb(243, 239, 239);
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s; 
+    transition: 0.3s;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-svg{
+
+svg {
     width: 30px;
 }
 
 /*==============================
 PARALAX
 ============================*/
-.parallax{
+.parallax {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -74,13 +84,63 @@ PARALAX
     padding: 80px 20px;
     position: relative;
 }
-.parallax ::before{
+
+.parallax ::before {
     content: "";
     position: absolute;
-    inset:0;
+    inset: 0;
     background: rgba(103, 99, 93, 0.061);
 }
-.parallax > * {
+
+.parallax>* {
     position: relative;
     z-index: 2;
+}
+
+.parallax-1 {
+    background-color: url("../assets/Images/fondo1.jpg")");
+}
+
+.parallax-2 {
+    background-color: url("../assets/images/fondo2.jpg");
+}
+
+.parallax-3 {
+    background-color: url("../assets/images/fondo3.jpg");
+}
+
+.parallax-4 {
+    background-color: url("../assets/images/fondo4.jpg");
+}
+
+.parallax-5 {
+    background-color: url("../assets/images/fondo5.jpg");
+}
+
+.porfile-img{
+    width: clamp(140px,20vmin,300px);
+    height: clamp(140px,20vmin,300px);
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.63);
+}
+
+.glass{
+    background: rgba(20, 30, 50, 0.38);
+    color: white;
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+/*
+HERO
+*/
+
+.porfile-card{
+    max-width: 700px;
+    padding: 45px;
+    text-align: center;
 }
