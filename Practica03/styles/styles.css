@@ -1,13 +1,13 @@
 body {
-    background-color: rgb(103, 99, 93);
+    background-color: #0b0f19;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0; 
-    color: #e0d8d8;
+    color: #f1f5f9;
     line-height: 1.5; 
 }
 
 #acerca_de_mi {
-    background-color: rgb(5, 31, 54);
+    background-color: #0d1b2a;
 }
 
 .menu-option {
@@ -19,6 +19,7 @@ body {
 
 .menu-option:hover {
     font-size: 30px;
+    color: #00ffdd;
 }
 
 nav {
@@ -30,7 +31,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgba(198, 202, 209, 0.45);
+    background: rgba(11, 15, 25, 0.65);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     z-index: 1000;
@@ -38,7 +39,7 @@ nav {
 }
 
 nav h2 {
-    color: rgb(243, 239, 239);
+    color: #ffffff;
 }
 
 nav ul {
@@ -48,7 +49,7 @@ nav ul {
 }
 
 nav a {
-    color: rgb(243, 239, 239);
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
@@ -66,7 +67,7 @@ html {
 PARALAX
 ============================*/
 .parallax {
-    min-height: 40vh;
+    min-height: 70vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +75,7 @@ PARALAX
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 20px;
+    padding: 300px 10px;
     position: relative;
 }
 
@@ -82,7 +83,7 @@ PARALAX
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(103, 99, 93, 0.061);
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .parallax>* {
@@ -116,16 +117,16 @@ PARALAX
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.63);
+    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.5);
 }
 
 .glass {
-    background: rgba(20, 30, 50, 0.38);
-    color: white;
+    background: rgba(20, 10, 35, 0.55);
+    color: #ffffff;
     backdrop-filter: blur(14px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 0, 127, 0.3);
     border-radius: 24px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column; /* Agregado para que foto y texto no se encimen */
     align-items: center;
@@ -146,7 +147,7 @@ HERO
 
 .porfile-card {
     max-width: 900px;
-    padding: 40px;
+    padding: 60px;
     display: flex;
     flex-direction: row; /* Coloca imagen y texto lado a lado en pantallas grandes */
     align-items: center;
@@ -184,8 +185,8 @@ BOTON
     display: inline-block;
     margin-top: 15px;
     padding: 14px 30px;
-    background: rgba(255, 255, 255, 0.9);
-    color: #111827;
+    background: #ff007f;
+    color: #ffffff;
     border-radius: 30px;
     text-decoration: none;
     font-weight: hold;
@@ -194,9 +195,9 @@ BOTON
 
 .boton:hover {
     transform: translate(-4px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
-    background-color: tomato;
-    color: white;
+    box-shadow: 0 12px 25px rgba(0, 255, 221, 0.35);
+    background-color: #00FFDD;
+    color: #0b0f19;
 }
 
 /*
@@ -205,20 +206,20 @@ COLORES SÓLIDOS ALTERNOS
 ==========================================
 */
 .solido-1 {
-    background: #f8fafc;
+    background: #18032b;
 }
 
 .solido-2 {
-    background: #111827;
+    background: #0f172a;
     color: #f8fafc;
 }
 
 .solido-3 {
-    background: #e0F2Fe;
+    background: #2b0d0d;
 }
 
 .solido-4 {
-    background: #1e293b;
+    background: #111827;
     color: #f8fafc;
 
 }
@@ -240,17 +241,18 @@ section h2 {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.12);
-    color: #222;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
     transition: 0.3s
 }
 
 .card:hover {
+    background: rgba(255, 255, 255, 0.137);
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(30, 41, 59, 0.80);
+    box-shadow: 0 20px 40px #ff007f;
 }
 
 /*
@@ -269,19 +271,18 @@ DATOS PERSONALES
     margin-top: 30px;
     padding: 10px;
     text-align: center;
-    background: white;
+    background: #1e293b;
     border-radius: 18px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 25px;
     max-width: 1200px;
     margin: auto;
 }
-
 .grid p {
     line-height: 1.5;
 }
@@ -330,7 +331,7 @@ REDES SOCIALES
     min-width: 120px;
     padding: 18px;
     color: white;
-    background: linear-gradient(145deg,#1e293b,#334155);
+    background: rgba(255, 255, 255, 0.06);
     border-radius: 18px;
     text-decoration: none;
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
@@ -341,5 +342,89 @@ REDES SOCIALES
     transform: 
     translateY(-8px)
     scale(1.05);
-    background: linear-gradient(145deg, #2563ed,#7c3aed);
+    background: linear-gradient(145deg, #ff007f, #0077ee);
+}
+
+/*=========================================
+FAVORITOS
+=========================================*/
+.favoritos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: stretch;
+}
+
+.favorito-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.favorito-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #f6faf9;
+}
+
+.favorito-card h4 {
+    margin: 15px 0 5px 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.favorito-card p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+.favorito-media {
+    width: 100%;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.favorito-media img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.favorito-media.audio-box {
+    flex-direction: column;
+    padding: 20px 10px;
+    background: rgba(255, 0, 127, 0.1);
+    border: 1px solid rgba(255, 0, 127, 0.2);
+}
+
+.media-element {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+}
+.audio-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+}
+
+.audio-cover {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }

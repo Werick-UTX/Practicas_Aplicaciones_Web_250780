@@ -25,7 +25,7 @@
             <li class="menu-option"><a href="#aspiraciones">Aspiraciones</a></li>
             <li class="menu-option"><a href="#hobbies">Hobbies</a></li>
             <li class="menu-option"><a href="#favoritos">Favoritos</a></li>
-            <li class="menu-option"><a href="#redes_sociales">Redes sociales</a></li>
+            <li class="menu-option"><a href="#redes">Redes sociales</a></li>
         </ul>
     </nav>
 
@@ -94,34 +94,42 @@
     <section id="aspiraciones" class="seccion solido-2">
 
         <div class="grid">
-            <article>
+            <article class="card">
                 <h3>👨🏻‍🎓 Terminar la carrera</h3>
                 <p> conlcuir mis estudios y fortalecer mis habilidades profesionales</p>
             </article>
 
-            <article>
+            <article class="card">
                 <h3>💻 Ser desarrollador</h3>
                 <p> Trabajar en proyectos de software y crear aplicaciones útiles</p>
             </article>
 
-            <article>
+            <article class="card">
                 <h3>🛩️ Viajar </h3>
                 <p>Conocer otras ciudades, culturas y nuevas experiencias</p>
+            </article>
+            <article class="card">
+                <h3>🗺️ Idiomas </h3>
+                <p>Dominar más que los idiomas, saber de culturas</p>
+            </article>
+            <article class="card">
+                <h3>🎨 Crear </h3>
+                <p>Crear desde el alma lo que todo artista requiere sacar</p>
             </article>
         </div>
     </section>
 
-       <section class="parallax parallax-3">
+    <section class="parallax parallax-3">
         <div class="glass frase">
-           <h2>Mis Hobbies</h2>
+            <h2>Mis Hobbies</h2>
         </div>
     </section>
     <!--====================== -->
     <!-- HOBBIES -->
     <!-- ====================== -->
     <section id="hobbies" class="seccion solido-3">
-        
-        <div class="grid ">
+
+        <div class="grid">
             <article class="card">
                 <h3>💻Programar</h3>
                 <p> Crear soluciones</p>
@@ -152,27 +160,48 @@
     <!--====================== -->
     <!-- FAVORITOS -->
     <!-- ====================== -->
-      <section class="parallax parallax-4">
+    <section class="parallax parallax-4">
         <div class="glass frase">
-           <h2>Mis Favoritos</h2>
+            <h2>Mis Favoritos</h2>
         </div>
     </section>
     <section id="favoritos" class="seccion solido-4">
-        <div class="grid">
-            <article >
-                <h3>📹Pelicula</h3>
-                <img src="img" alt="El club de los poetas muertos">
-                <p>El club de los poetas muertos</p>
+        <div class="grid favoritos-grid">
+
+            <article class="card favorito-card">
+                <h3>📹 Película</h3>
+                <div class="favorito-media">
+                    <video controls poster="assets/Images/portadapelicula.jpg" class="media-element">
+                        <source
+                            src="assets/video/Kitustrailers _ EL CLUB DE LOS POETAS MUERTOS (Trailer en Español).mp4"
+                            type="video/mp4">
+                        Tu navegador no soporta el reproductor de video.
+                    </video>
+                </div>
+                <h4>El club de los poetas muertos</h4>
+                <p>Una gran historia sobre la pasión, el arte y la libertad de pensamiento.</p>
             </article>
 
-            <article >
-                <h3>🎶Cancion favorita</h3>
-                    <p>Somos Ajenos - Enjambre</p>
+            <article class="card favorito-card">
+                <h3>🎶 Canción favorita</h3>
+                <div class="favorito-media audio-box">
+                    <img src="assets/Images/portadaAudio.jpg" alt="Portada Enjambre - Somos Ajenos"
+                        class="audio-cover">
+                    <audio controls class="media-element">
+                        <source src="assets/audio/Enjambre - Somos Ajenos.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <h4>Somos Ajenos</h4>
+                <p>Enjambre</p>
             </article>
 
-            <article >
-                <h3>📕Libro favorito</h3>
-                <p>El amor , las mujeres y la vida - Mario Benetti</p>
+            <article class="card favorito-card">
+                <h3>📕 Libro favorito</h3>
+                <div class="favorito-media">
+                    <img src="assets/Images/portadaLibro.jpg" alt="El amor, las mujeres y la vida">
+                </div>
+                <h4>El amor, las mujeres y la vida</h4>
+                <p>Mario Benedetti</p>
             </article>
 
         </div>
@@ -181,9 +210,9 @@
     <!--====================== -->
     <!-- REDES SOCIALES -->
     <!-- ====================== -->
-     <section class="parallax parallax-5">
+    <section class="parallax parallax-5">
         <div class="glass frase">
-           <h2>Mis Redes Sociales</h2>
+            <h2>Mis Redes Sociales</h2>
         </div>
     </section>
 
@@ -197,7 +226,7 @@
 
         <div class="redes-sociales">
 
-            <a href="https://github.com/" target="_blank" aria-label="GitHub">
+            <a href="https://github.com/Werick-UTX" target="_blank" aria-label="GitHub">
 
                 <svg viewBox="0 0 24 24">
                     <path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.01
@@ -226,7 +255,7 @@
             </a>
 
 
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/wuerikko?stkn=czROeTQOZDN2eWMz" target="_blank" aria-label="Instagram">
 
                 <svg viewBox="0 0 24 24">
 
@@ -326,7 +355,7 @@
 
     </section>
 
-    <footer class="solido-2">
+    <footer class="solido-2" style="align-items: center;">
         <a class="boton" href="#inicio"> Volver al inicio</a>
     </footer>
 </body>
