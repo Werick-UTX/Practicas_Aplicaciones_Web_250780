@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MecaGest: Formulario de Registro de Nuevos Usuarios - 250780</title>
+</head>
+
+<body>
+    <header>MecaGest</header>
+    <h2>Registro de Nuevos Usuarios</h2>
+    <p>Complete los campos para solicitar una cuenta en el sistema</p>
+
+    <main>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="inpNombre">Nombre:</label> <br>
+                <input type="text" name="Nombre" id="Nombre" placeholder="ej: Erick" required><br>
+
+                <label for="apPaterno">Apellido Paterno:</label><br>
+                <input type="text" name="apPaterno" id="apPaterno" placeholder="ej: Cruz" required><br>
+
+                <label for="apMaterno">Apellido Materno:</label><br>
+                <input type="text" name="apMaterno" id="apMaterno" placeholder="Opcional"><br>
+
+                <label for="fechaNac">Fecha de Nacimiento:</label><br>
+                <input type="date" name="fechaNac" id="fechaNac" required><br>
+
+                <label for="genero">Género: </label><br>
+                <select name="genero" id="genero" required>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                    <option value="X">Prefiero no decirlo</option>
+                </select><br>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" name="correo" id="correo" placeholder="ej: estoyloco@gmail" required><br>
+
+                <label for="telefono">Telefono móvil</label><br>
+                <input type="text" name="telefono" id="telefono" placeholder="ej: (55) 123-567-1234" required><br>
+
+                <label for="telefono">Telefono fijo</label><br>
+                <input type="text" name="telefono" id="telefono" placeholder="Opcional"><br>
+
+                <label for="horarioContacto">Favor de contactar en el horario: </label><br>
+                <input type="time" name="horarioContactoInicio" id="horarioContactoInicio" required> a <input
+                    type="time" name="horarioContactoFin" id="horarioContactoFin"><br>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Datos de Dirección</legend>
+
+                <label for="direccion">Dirección</label><br>
+                <input type="text" name="direccion" id="direccion" required placeholder="Calle, Número, Colonia"><br>
+
+                <label for="pais">País</label><br>
+                <input type="text" name="pais" id="pais" placeholder="ej. México" required><br>
+                
+                <label for="estado">Estado</label><br>
+                <input type="text" name="estado" id="estado" placeholder="ej. Puebla" required><br>
+
+                <label for="ciudad">Ciudad</label><br>
+                <input type="text" name="ciudad" id="ciudad" placeholder="ej. Huauchinango" required><br>
+
+                <label for="codigoPostal">Código Postal</label><br>
+                <input type="text" name="codigoPostal" id="codigoPostal" placeholder="ej: 73161" required><br>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de Acceso</legend><br>
+                <label for="usuario">Usuario:</label><br>
+                <input type="text" name="usuario" id="usuario" placeholder="ej: estoyLocoWueric" required><br>
+
+                <label for="password">Contraseña:</label><br>
+                <input type="password" name="password" id="password" required><br>
+
+                <label for="confirmarPassword">Confirmar Contraseña:</label><br>
+                <input type="password" name="confirmarPassword" id="confirmarPassword" required><br>
+
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>
